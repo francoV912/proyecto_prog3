@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DulceMiga — Contacto</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img src="../img/logo.svg" alt="Logo DulceMiga" class="logo">
+      <span class="brand-name">DulceMiga</span>
+    </a>
+    <input id="nav-toggle-4" type="checkbox" class="nav-toggle" aria-label="menu toggle">
+    <nav class="nav" role="navigation" aria-label="principal">
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle-4" class="nav-toggle-label" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>
+
+<main class="container main contact-page">
+  <h1>Contacto</h1>
+  <form class="contact-form" action="#" method="post" novalidate>
+    <div class="form-row">
+      <label for="name">Nombre *</label>
+      <input id="name" name="name" type="text" required minlength="2" placeholder="Tu nombre">
+    </div>
+    <div class="form-row">
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required placeholder="tunombre@mail.com">
+    </div>
+    <div class="form-row">
+      <label for="phone">Teléfono (opcional)</label>
+      <input id="phone" name="phone" type="tel" pattern="\+?\d{7,15}" placeholder="+549341...">
+    </div>
+    <div class="form-row">
+      <label for="subject">Asunto *</label>
+      <input id="subject" name="subject" type="text" required placeholder="Por ejemplo: Pedido para cumpleaños">
+    </div>
+    <div class="form-row">
+      <label for="message">Mensaje *</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Cuéntanos tu pedido"></textarea>
+    </div>
+    <div class="form-row">
+      <button class="btn" type="submit">Enviar mensaje</button>
+    </div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="contact-info">
+      <p><strong>DulceMiga</strong></p>
+      <p>Av. Falsa 123, San Dulce</p>
+      <p>Tel: (03461) 123-456</p>
+      <p>Email: contacto@dulcemiga.test</p>
+    </div>
+    <div class="social">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Whatsapp">Whatsapp</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
